@@ -109,7 +109,7 @@
 <body>
   <div class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper white">
+      <div class="nav-wrapper  white">
         <a href="#" class="brand-logo">Red BnB</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
@@ -117,14 +117,15 @@
           <li class="txteffects2"><a href="#registrazione">Registrati</a></li>
           <li class="txteffects2"><a href="#ospita">Ospita</a></li>
         </ul>
-        <ul class="sidenav" id="mobile-demo">
-          <li class="txteffects2"><a href="#servizio">Servizio</a></li>
-          <li class="txteffects2"><a href="#registrazione">Registrati</a></li>
-          <li class="txteffects2"><a href="#ospita">Ospita</a></li>
-        </ul>
       </div>
     </nav>
   </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li class="txteffects2"><a href="#servizio">Servizio</a></li>
+    <li class="txteffects2"><a href="#registrazione">Registrati</a></li>
+    <li class="txteffects2"><a href="#ospita">Ospita</a></li>
+  </ul>
 
   <!-- intro -->
   <div id="index-banner" class="parallax-container">
@@ -265,6 +266,12 @@
   <!--  Scripts-->  
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
 
   <script> 
     (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
